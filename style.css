@@ -1,0 +1,51 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0a1f44;
+color:#d4af37;
+text-align:center;
+}
+
+.cover{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+background:#d4af37;
+border:none;
+border-radius:30px;
+color:#0a1f44;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.85;
+}
+
+.isi{
+display:none;
+background:white;
+color:#0a1f44;
+padding:30px;
+min-height:100vh;
+}
+
+.card{
+background:#f2f2f2;
+padding:20px;
+margin:20px auto;
+border-radius:10px;
+max-width:400px;
+}
+
+.qr img{
+width:180px;
+margin-top:15px;
+}
