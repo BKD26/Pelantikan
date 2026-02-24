@@ -54,3 +54,31 @@ body:JSON.stringify({nomor,nama:tamu,signature})
 })
 .then(()=>alert("Absensi berhasil"));
 }
+
+function doGet() {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  const data = sheet.getDataRange().getValues();
+  
+  const html = `
+  <html>
+  <head>
+  <style>
+  body{font-family:Arial;padding:40px;}
+  h2{text-align:center;}
+  table{width:100%;border-collapse:collapse;margin-top:20px;}
+  th,td{border:1px solid #000;padding:8px;text-align:center;}
+  </style>
+  </head>
+  <body>
+  <h2>DAFTAR HADIR<br>PELANTIKAN ESELON III & IV</h2>
+  <table>
+  ${data.map((row,i)=>
+    "<tr>"+row.map(col=> i==0?"<th>"+col+"</th>":"<td>"+col+"</td>").join("")+"</tr>"
+  ).join("")}
+  </table>
+  </body>
+  </html>
+  `;
+  
+  return HtmlService.createHtmlOutput(html);
+}
