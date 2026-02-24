@@ -3,70 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pelantikan Eselon III & IV</title>
+<title>Undangan Pelantikan</title>
 <link rel="stylesheet" href="style.css">
-<script src="https://unpkg.com/html5-qrcode"></script>
 </head>
 <body>
 
-<audio id="bgMusic" loop>
-<source src="music.mp3" type="audio/mpeg">
-</audio>
+<div class="container">
 
-<!-- HERO VIDEO -->
-<section class="hero" id="cover">
-<video autoplay muted loop class="bg-video">
-<source src="hero.mp4" type="video/mp4">
-</video>
-
-<div class="hero-content">
-<img src="logo.png" class="logo">
-<h3>PEMERINTAH KABUPATEN BOVEN DIGOEL</h3>
-<h1>PELANTIKAN PEJABAT</h1>
-<h2>ESELON III & IV</h2>
-
-<div id="countdown"></div>
-
-<p>Kepada Yth.</p>
-<h3 id="namaTamu">Tamu Undangan</h3>
-
-<button onclick="bukaUndangan()">Buka Undangan</button>
+<div class="section fade">
+<h1>UNDANGAN PELANTIKAN</h1>
+<p class="subtitle">Pemerintah Kabupaten Boven Digoel</p>
 </div>
-</section>
 
-<!-- CONTENT -->
-<div class="content" id="content">
-
-<section class="section fade">
-<h2>Detail Acara</h2>
-<p>28 Maret 2026 | 13.00 WIT</p>
-<p>Aula Kantor Bupati</p>
-</section>
-
-<section class="section gallery fade">
-<h2>Galeri</h2>
-<div class="grid">
-<img src="https://picsum.photos/400/300?1">
-<img src="https://picsum.photos/400/300?2">
-<img src="https://picsum.photos/400/300?3">
-<img src="https://picsum.photos/400/300?4">
+<div class="section fade">
+<div class="fitur">✔ Absensi otomatis ke Google Sheet</div>
+<div class="fitur">✔ Dashboard ready</div>
+<div class="fitur">✔ Undangan digital profesional</div>
 </div>
-</section>
 
-<section class="section fade">
-<h2>QR Kehadiran</h2>
-<img id="qrImage">
-<button onclick="kirimAbsensi()">Konfirmasi Kehadiran</button>
-</section>
+<div class="section fade">
+<img src="foto1.jpg" class="foto">
+</div>
 
-<section class="section fade">
-<h2>Scan QR Panitia</h2>
-<div id="reader" style="width:300px;margin:auto;"></div>
-</section>
+<div class="section fade">
+<img src="foto2.jpg" class="foto">
+</div>
 
 </div>
 
 <script src="script.js"></script>
-<script src="scanner.js"></script>
 </body>
 </html>
