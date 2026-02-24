@@ -1,51 +1,90 @@
 body{
 margin:0;
-font-family:Arial, sans-serif;
+font-family:'Segoe UI',sans-serif;
 background:#0a1f44;
-color:#d4af37;
-text-align:center;
+color:white;
+scroll-behavior:smooth;
 }
 
 .cover{
 height:100vh;
+background:linear-gradient(rgba(10,31,68,0.85),rgba(10,31,68,0.85)),
+url('https://picsum.photos/1920/1080?blur=3');
+background-size:cover;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.overlay h1{
+font-size:40px;
+color:#d4af37;
+}
+
+.overlay h2{
+color:#fff;
+margin-bottom:20px;
+}
+
+#countdown{
+font-size:22px;
+margin:15px 0;
+color:#d4af37;
 }
 
 button{
-margin-top:20px;
 padding:12px 25px;
-background:#d4af37;
 border:none;
 border-radius:30px;
+background:#d4af37;
 color:#0a1f44;
 font-weight:bold;
 cursor:pointer;
+margin-top:15px;
 }
 
-button:hover{
-opacity:0.85;
-}
-
-.isi{
+.content{
 display:none;
 background:white;
 color:#0a1f44;
-padding:30px;
-min-height:100vh;
+padding:40px 20px;
+}
+
+.section{
+margin-bottom:50px;
+text-align:center;
 }
 
 .card{
-background:#f2f2f2;
+background:#f3f3f3;
 padding:20px;
-margin:20px auto;
-border-radius:10px;
+border-radius:12px;
 max-width:400px;
+margin:auto;
 }
 
-.qr img{
+.timeline{
+list-style:none;
+padding:0;
+}
+
+.timeline li{
+margin:10px 0;
+}
+
+.gallery .grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+.qr-section img{
 width:180px;
-margin-top:15px;
+margin:20px 0;
 }
