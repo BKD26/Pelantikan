@@ -39,11 +39,32 @@ font-weight:bold;
 cursor:pointer;
 }
 
-.content{
+..content{
 display:none;
 background:white;
 color:#0a1f44;
 padding:40px 20px;
+position:relative;
+}
+
+.content::before{
+content:"";
+position:fixed;
+top:50%;
+left:50%;
+width:500px;
+height:500px;
+background:url('garuda.png') no-repeat center;
+background-size:contain;
+opacity:0.05;
+transform:translate(-50%,-50%);
+z-index:0;
+pointer-events:none;
+}
+
+.section{
+position:relative;
+z-index:1;
 }
 
 .section{
